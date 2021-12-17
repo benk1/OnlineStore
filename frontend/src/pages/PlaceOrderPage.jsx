@@ -114,7 +114,8 @@ const PlaceOrderPage = ({ history }) => {
 													</Link>
 												</Col>
 												<Col md={4}>
-													{item.qty} x £{item.price} = £{item.qty * item.price}
+													{item.qty} x £{item.price} = {item.qty * item.price}{' '}
+													<i className="fas fa-euro-sign"></i>
 												</Col>
 											</Row>
 										</ListGroupItem>
@@ -134,25 +135,36 @@ const PlaceOrderPage = ({ history }) => {
 							<ListGroup.Item>
 								<Row>
 									<Col>Items</Col>
-									<Col>£{cart.itemsPrice}</Col>
+									<Col>
+										{cart.itemsPrice} <i className="fas fa-euro-sign"></i>
+										<i className="fas fa-euro-sign"></i>
+									</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>
 								<Row>
 									<Col>Shipping</Col>
-									<Col>£{cart.shippingPrice}</Col>
+									<Col>
+										{cart.shippingPrice} <i className="fas fa-euro-sign"></i>
+									</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>
 								<Row>
 									<Col>Tax</Col>
-									<Col>£{cart.taxPrice}</Col>
+									<Col>
+										{cart.taxPrice}
+										<i className="fas fa-euro-sign"></i>
+									</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>
 								<Row>
 									<Col>Total</Col>
-									<Col>£{cart.totalPrice}</Col>
+									<Col>
+										{cart.totalPrice}
+										<i className="fas fa-euro-sign"></i>
+									</Col>
 								</Row>
 							</ListGroup.Item>
 							<ListGroup.Item>

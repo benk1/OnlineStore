@@ -14,7 +14,7 @@ import { getUserDetails, updateUserProfile } from '../actions/userActions';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
 import { useSelector, useDispatch } from 'react-redux';
-import { USER__UPDATE_PROFILE_RESET } from '../constants/userConstants';
+import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants';
 import { listMyOrders } from '../actions/orderActions';
 import { LinkContainer } from 'react-router-bootstrap';
 
@@ -44,7 +44,7 @@ const ProfilePage = ({ location, history }) => {
 			history.push('/login');
 		} else {
 			if (!user || !user.name || success) {
-				dispatch({ type: USER__UPDATE_PROFILE_RESET });
+				dispatch({ type: USER_UPDATE_PROFILE_RESET });
 				dispatch(getUserDetails('profile'));
 				dispatch(listMyOrders());
 			} else {

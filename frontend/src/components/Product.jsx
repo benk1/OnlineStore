@@ -24,7 +24,10 @@ const Product = ({ product }) => {
 					/>
 				</Card.Text>
 
-				<Card.Text as="h3">£{product.price}</Card.Text>
+				<Card.Text as="h3">
+					{product.price}
+					<i className="fas fa-euro-sign"></i>
+				</Card.Text>
 			</Card.Body>
 		</Card>
 	);

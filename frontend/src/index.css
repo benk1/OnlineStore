@@ -1,3 +1,9 @@
+* {
+	/* Reset browser's padding and margin */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 main {
 	min-height: 80vh;
 }
@@ -21,4 +27,64 @@ h2 {
 a {
 	text-decoration: none;
 }
+.btn-custom {
+	/* border-radius: 50%; */
+	/* height: 46px; */
+	/* line-height: 15px; */
 
+	color: white;
+	border: 1px solid #f8e825;
+}
+
+.btn-custom:hover {
+	color: #f8e825;
+}
+.name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.initials {
+	/* padding: unset; */
+	padding: 7px;
+	margin-left: 20px;
+}
+.icon {
+	color: #f8e825;
+}
+.brand {
+	color: white;
+	text-align: center;
+}
+.brand:hover {
+	color: #f8e825;
+}
+.profile .logout {
+	color: #f8e825;
+}
+.goBack {
+	background-color: black;
+	/* border: 1px solid #f8e825; */
+	color: white;
+}
+.goBack:hover {
+	color: #f8e825;
+}
+.btn:hover {
+	color: #f8e825;
+}
+.footerIcons {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+.fab:hover {
+	cursor: pointer;
+	color: #f8e825;
+}
+.namedropDown {
+	font-size: 18px;
+	font-weight: bold;
+}

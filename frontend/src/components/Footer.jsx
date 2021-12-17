@@ -7,7 +7,16 @@ const Footer = () => {
 			<Container>
 				<Row>
 					<Col className="text-center py-3">
-						Ben's Copyright &copy; Online Store
+						<span className="footerIcons">
+							<i className="fab fa-instagram-square fa-3x"></i>
+							<i className="fab fa-linkedin fa-3x"></i>
+							<i className="fab fa-github-square fa-3x"></i>
+						</span>
+						<div>
+							<p>
+								Ben's Copyright &copy; Online Store 2022, All rights reserved
+							</p>
+						</div>
 					</Col>
 				</Row>
 			</Container>

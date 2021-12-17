@@ -58,7 +58,11 @@ const ProductPage = ({ match, history }) => {
 								/>
 							</ListGroupItem>
 
-							<ListGroupItem>Price: £{product.price}</ListGroupItem>
+							<ListGroupItem>
+								<b>Price:</b>
+								{product.price}
+								<i className="fas fa-euro-sign"></i>
+							</ListGroupItem>
 							<ListGroupItem>Description: {product.description}</ListGroupItem>
 						</ListGroup>
 					</Col>
@@ -68,7 +72,9 @@ const ProductPage = ({ match, history }) => {
 							<ListGroup variant="flush">
 								<ListGroupItem>
 									<Row>
-										<Col>Price:</Col>
+										<Col>
+											<b>Price:</b>
+										</Col>
 										<Col>
 											<strong>{product.price}</strong>
 										</Col>
@@ -121,10 +127,12 @@ const ProductPage = ({ match, history }) => {
 					</Col>
 				</Row>
 			)}
-
-			<Link className="btn btn-light my-3" to="/">
-				Go Back
-			</Link>
+			<br />
+			<Button variant="custom" className="goBack">
+				<Link className="goBack" to="/">
+					Go Back
+				</Link>
+			</Button>
 		</>
 	);
 };
