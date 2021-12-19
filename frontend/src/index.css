@@ -45,19 +45,12 @@ a {
 	justify-content: center;
 	color: white;
 }
-.initials {
-	/* padding: unset; */
-	padding: 7px;
-	margin-left: 20px;
-}
+
 .icon {
 	color: #f8e825;
 }
-.brand {
-	color: white;
-	text-align: center;
-}
-.brand:hover {
+
+i:hover {
 	color: #f8e825;
 }
 .profile .logout {
@@ -74,17 +67,8 @@ a {
 .btn:hover {
 	color: #f8e825;
 }
-.footerIcons {
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	justify-content: space-evenly;
-}
+
 .fab:hover {
 	cursor: pointer;
 	color: #f8e825;
-}
-.namedropDown {
-	font-size: 18px;
-	font-weight: bold;
 }

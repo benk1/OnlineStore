@@ -3,6 +3,7 @@ import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, Container, NavDropdown, Button } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../actions/userActions';
+import './Header.css';
 
 const Header = () => {
 	const [isShown, setIsShown] = useState(false);
@@ -75,8 +76,16 @@ const Header = () => {
 									</Nav.Link>
 								</LinkContainer>
 							)}
+
 							{userInfo && userInfo.isAdmin && (
-								<NavDropdown title="Admin" id="adminmenu">
+								<NavDropdown
+									title={
+										<Button variant="custom" className="initials">
+											admin
+										</Button>
+									}
+									id="adminmenu"
+								>
 									<LinkContainer to="/admin/userlist">
 										<NavDropdown.Item>Users</NavDropdown.Item>
 									</LinkContainer>

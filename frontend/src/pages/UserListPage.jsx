@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deleteUser, listUsers } from '../actions/userActions';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
+import './UserListPage.css';
 
 const UserListPage = ({ history }) => {
 	const dispatch = useDispatch();
@@ -62,22 +63,32 @@ const UserListPage = ({ history }) => {
 								</td>
 								<td>
 									{user.isAdmin ? (
-										<i className="fas fa-check" style={{ color: 'green' }}></i>
+										<i
+											className="fas fa-check fa-2x"
+											style={{ color: 'green' }}
+										></i>
 									) : (
-										<i className="fas fa-times" style={{ color: 'red' }}></i>
+										<i
+											className="fas fa-times fa-2x"
+											style={{ color: 'red' }}
+										></i>
 									)}
 								</td>
-								<td>
+								<td className="editDeleteIcons">
 									<LinkContainer to={`/admin/user/${user._id}/edit`}>
 										<Button variant="light" className="btn-sm">
-											<i className="fas fa-edit"></i>
+											<i className="fas fa-user-edit fa-3x"></i>
 										</Button>
 									</LinkContainer>
-									<Button
+									<i
+										onClick={() => handleDelete(user._id)}
+										className="fas fa-trash fa-2x deleteIcon"
+									></i>
+									{/* <Button
 										variant="danger"
 										className="btn-sm"
 										onClick={() => handleDelete(user._id)}
-									></Button>
+									></Button> */}
 								</td>
 							</tr>
 						))}

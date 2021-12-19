@@ -1,0 +1,18 @@
+.brand {
+	color: white;
+	text-align: center;
+}
+
+.brand:hover {
+	color: #f8e825;
+}
+.namedropDown {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.initials {
+	/* padding: unset; */
+	padding: 7px;
+	margin-left: 20px;
+}

@@ -1,0 +1,10 @@
+.deleteIcon {
+	color: red;
+	cursor: pointer;
+}
+
+.editDeleteIcons {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
