@@ -49,9 +49,6 @@ const UserEditScreen = ({ match, history }) => {
 
 	return (
 		<>
-			<Link to="/admin/userlist" className="btn btn-light my-3">
-				Go Back
-			</Link>
 			<FormContainer>
 				<h1>Edit User</h1>
 				{loadingUpdate && <Loader />}
@@ -97,6 +94,14 @@ const UserEditScreen = ({ match, history }) => {
 					</Form>
 				)}
 			</FormContainer>
+			<Button variant="custom" className="goBack">
+				<Link className="goBack" to="/admin/userlist">
+					Go Back
+				</Link>
+			</Button>
+			{/* <Button type="button" className="goBack btn btn-custom">
+				<Link to="/admin/userlist">Go Back</Link>
+			</Button> */}
 		</>
 	);
 };

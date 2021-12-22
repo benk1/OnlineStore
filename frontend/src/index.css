@@ -46,10 +46,6 @@ a {
 	color: white;
 }
 
-.icon {
-	color: #f8e825;
-}
-
 i:hover {
 	color: #f8e825;
 }
@@ -70,5 +66,9 @@ i:hover {
 
 .fab:hover {
 	cursor: pointer;
+	color: #f8e825;
+}
+.cartEmpty:hover {
+	font-size: 1.5rem;
 	color: #f8e825;
 }

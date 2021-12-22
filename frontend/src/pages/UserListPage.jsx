@@ -63,27 +63,25 @@ const UserListPage = ({ history }) => {
 								</td>
 								<td>
 									{user.isAdmin ? (
-										<i
-											className="fas fa-check fa-2x"
-											style={{ color: 'green' }}
-										></i>
+										<i className="fas fa-check " style={{ color: 'green' }}></i>
 									) : (
-										<i
-											className="fas fa-times fa-2x"
-											style={{ color: 'red' }}
-										></i>
+										<i className="fas fa-times" style={{ color: 'red' }}></i>
 									)}
 								</td>
 								<td className="editDeleteIcons">
 									<LinkContainer to={`/admin/user/${user._id}/edit`}>
 										<Button variant="light" className="btn-sm">
-											<i className="fas fa-user-edit fa-3x"></i>
+											<i className="fas fa-user-edit fa-2x"></i>
 										</Button>
 									</LinkContainer>
-									<i
+
+									<Button
+										variant="danger"
+										className="btn-sm"
 										onClick={() => handleDelete(user._id)}
-										className="fas fa-trash fa-2x deleteIcon"
-									></i>
+									>
+										<i className="fas fa-trash" deleteIcon></i>
+									</Button>
 									{/* <Button
 										variant="danger"
 										className="btn-sm"
