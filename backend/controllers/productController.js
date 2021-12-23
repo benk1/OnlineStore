@@ -150,6 +150,8 @@ const getTopProducts = asyncHandler(async (req, res) => {
 	res.send(products);
 });
 
+
+
 export {
 	getProducts,
 	getProductById,
