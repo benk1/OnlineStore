@@ -2,4 +2,6 @@
 
 #### e-commerce App
 
-[Check It Live Here](https://online-storeapp.herokuapp.com/)
+This site is still under development and more features are coming up....
+
+[Check It Live Here So Far](https://online-storeapp.herokuapp.com/)
